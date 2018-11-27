@@ -18,4 +18,9 @@
     <!-- 创建UserDao实例 -->
     <bean id="userDaoId" class="dao.impl.UserDaoImpl"></bean>
 
+    <!--创建UserServiceImpl1-->
+    <bean id="userService1" class="service.impl.UserServiceImpl1">
+        <constructor-arg ref="userDaoId"></constructor-arg>
+    </bean>
+
 </beans>
