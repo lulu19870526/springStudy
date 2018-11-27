@@ -1,6 +1,6 @@
-package dao.impl;
+package com.dao.impl;
 
-import dao.UserDao;
+import com.dao.UserDao;
 
 public class UserDaoImpl implements UserDao {
 

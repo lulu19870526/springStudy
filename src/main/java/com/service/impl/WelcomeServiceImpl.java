@@ -1,6 +1,6 @@
-package service.impl;
+package com.service.impl;
 
-import service.WelcomeService;
+import com.service.WelcomeService;
 
 public class WelcomeServiceImpl implements WelcomeService {
 

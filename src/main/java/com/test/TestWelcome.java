@@ -1,9 +1,9 @@
-package test;
+package com.test;
 
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import service.WelcomeService;
+import com.service.WelcomeService;
 
 public class TestWelcome {
 
