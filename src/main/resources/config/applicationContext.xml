@@ -41,7 +41,8 @@
 
     <aop:config>
         <aop:aspect id="time" ref="timeHandler">
-            <aop:pointcut id="addAllMethod" expression="execution(* com.service.impl.*.*(..))" />
+            <!--<aop:pointcut id="addAllMethod" expression="execution(* com.service.impl.*.*(..))" />-->
+            <aop:pointcut id="addAllMethod" expression="execution(* com.service.impl.UserServiceImpl.addUser(..))" />
             <aop:before method="before" pointcut-ref="addAllMethod" />
             <aop:after method="after" pointcut-ref="addAllMethod" />
             <aop:around method="around" pointcut-ref="addAllMethod" />
