@@ -15,7 +15,8 @@
 
     <!-- 扫描:当前包中的类和子包中的类 -->
     <context:component-scan base-package="com"></context:component-scan>
-
+    <!--aop-->
+    <aop:aspectj-autoproxy />
 
     <!-- 配置service
         <bean> 配置需要创建的对象
