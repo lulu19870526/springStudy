@@ -5,6 +5,12 @@ import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.LoaderClassPath;
 
+
+/**
+ * Javassit提供了运行时操作Java字节码的方法，其效率低于asm。
+ * javassist主要是提供了代码级别的修改(也有bytecode级别)，相比与asm的字节码级别的修改，
+ * 学习成本低，开发效率高。因此，在实际应用中javassist是一个非常不错的选择
+ */
 public class JavassistTest {
 
     public static void main(String[] args){
