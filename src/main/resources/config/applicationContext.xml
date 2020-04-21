@@ -54,4 +54,12 @@
         </aop:aspect>
     </aop:config>
 
+    <bean id="bmwCar" class="factorymethod.CarStaticFactory" factory-method="getCar">
+        <constructor-arg value="3"></constructor-arg>
+    </bean>
+
+    <bean id="audiCar" class="factorymethod.CarStaticFactory" factory-method="getCar">
+        <constructor-arg value="2"></constructor-arg>
+    </bean>
+
 </beans>
