@@ -92,4 +92,26 @@
         <constructor-arg value="6"></constructor-arg>
     </bean>
 
+    <bean id="father" class="com.autowiring.Father"></bean>
+    <!--constructor   ——根据构造函数参数的数据类型，进行byType模式的自动装配。constructor其实时按byType的方式进行构造函数的注入。-->
+    <bean id="son" class="com.autowiring.Son" autowire="constructor"></bean>
+
+    <!--byType   　　——根据Property的数据类型（Type）自动装配，如果一个bean的数据类型，
+    兼容另一个bean中Property的数据类型，则自动装配。
+    通过bean set方法中参数的类型和BeanFactory中定义合作者的类型做匹配，Spring会找到匹配的合作者进行注入。-->
+    <!--
+    <bean id="son" class="com.autowiring.Son" autowire="byType"></bean>-->
+
+    <!--buName  ——根据Property的Name自动装配，如果一个bean的name，和另一个bean中的Property的name相同，
+    则自动装配这个bean到Property中。 Spring用bean中set方法名和BeanFactory中定义的合作者的名称做匹配
+    -->
+    <!--
+    <bean id="son" class="com.autowiring.Son" autowire="byName"></bean>-->
+
+    <!--no ——默认情况下，不自动装配，通过“ref”attribute手动设定。-->
+    <!--
+    <bean id="son" class="com.autowiring.Son">
+        <property name="father" ref="father"></property>
+    </bean>-->
+
 </beans>
