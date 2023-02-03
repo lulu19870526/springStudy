@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * 在增强的方法中，Spring会先去容器中查看一下是否有这个bean的实例了，
  * 如果有了的话，就返回已有对象，没有的话就创建一个，然后放到容器中。
  */
-@Configuration
+//@Configuration
 public class MyTestConfig {
 
     @Bean
